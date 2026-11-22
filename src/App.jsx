@@ -5,6 +5,7 @@ import DisasterMap from './pages/DisasterMap'
 import ReportIncident from './pages/ReportIncident'
 import VerificationConsole from './pages/VerificationConsole'
 import RoutePlanner from './pages/RoutePlanner'
+import RescueOperations from './pages/RescueOperations'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/report-incident" element={<ReportIncident />} />
       <Route path="/verification" element={<VerificationConsole />} />
       <Route path="/route-planner" element={<RoutePlanner />} />
+      <Route path="/rescue-operations" element={<RescueOperations />} />
     </Routes>
   )
 }
