@@ -8,11 +8,13 @@ import RoutePlanner from './pages/RoutePlanner'
 import RescueOperations from './pages/RescueOperations'
 import RiskAnalytics from './pages/RiskAnalytics'
 import HazardDetection from './pages/HazardDetection'
+import Login from './pages/Login'
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPage />} />
+      <Route path="/login" element={<Login />} />
       <Route path="/command-center" element={<CommandCenter />} />
       <Route path="/map" element={<DisasterMap />} />
       <Route path="/risk-analytics" element={<RiskAnalytics />} />
