@@ -16,6 +16,22 @@ def create_app():
     app.register_blueprint(incidents_bp)
     app.register_blueprint(verification_bp)
 
+    @app.route('/', methods=['GET'])
+    def root_index():
+        return jsonify({
+            'name': 'SafePath AI Disaster Intelligence Core API',
+            'version': '1.0.0-prototype',
+            'status': 'OPERATIONAL',
+            'frontend_portal': 'http://localhost:5173',
+            'endpoints': {
+                'health': '/api/health',
+                'incidents_list': 'GET /api/incidents',
+                'incidents_create': 'POST /api/incidents',
+                'truth_engine_verify': 'POST /api/verify',
+            },
+            'disclaimer': 'SafePath AI Research Prototype API. Not a replacement for official emergency services.'
+        }), 200
+
     @app.route('/api/health', methods=['GET'])
     def health_check():
         return jsonify({
