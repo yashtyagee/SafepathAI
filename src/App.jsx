@@ -7,6 +7,7 @@ import VerificationConsole from './pages/VerificationConsole'
 import RoutePlanner from './pages/RoutePlanner'
 import RescueOperations from './pages/RescueOperations'
 import RiskAnalytics from './pages/RiskAnalytics'
+import HazardDetection from './pages/HazardDetection'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/command-center" element={<CommandCenter />} />
       <Route path="/map" element={<DisasterMap />} />
       <Route path="/risk-analytics" element={<RiskAnalytics />} />
+      <Route path="/hazard-detection" element={<HazardDetection />} />
       <Route path="/report-incident" element={<ReportIncident />} />
       <Route path="/verification" element={<VerificationConsole />} />
       <Route path="/route-planner" element={<RoutePlanner />} />

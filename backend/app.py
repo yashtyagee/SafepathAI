@@ -4,6 +4,7 @@ from flask_cors import CORS
 from config import Config
 from routes.incidents import incidents_bp
 from routes.verification import verification_bp
+from routes.detection import detection_bp
 
 def create_app():
     app = Flask(__name__)
@@ -15,6 +16,7 @@ def create_app():
     # Register Blueprints
     app.register_blueprint(incidents_bp)
     app.register_blueprint(verification_bp)
+    app.register_blueprint(detection_bp)
 
     @app.route('/', methods=['GET'])
     def root_index():

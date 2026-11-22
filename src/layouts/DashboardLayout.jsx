@@ -32,8 +32,9 @@ const NAVIGATION_ITEMS = [
   { name: 'Command Center', path: '/command-center', icon: LayoutDashboard },
   { name: 'Disaster Map', path: '/map', icon: MapIcon },
   { name: 'Risk Analytics', path: '/risk-analytics', icon: LineChart },
+  { name: 'Hazard Detection', path: '/hazard-detection', icon: CheckCircle2 },
   { name: 'Report Incident', path: '/report-incident', icon: FilePlus },
-  { name: 'AI Truth Engine', path: '/verification', icon: CheckCircle2 },
+  { name: 'AI Truth Engine', path: '/verification', icon: Shield },
   { name: 'Route Planner', path: '/route-planner', icon: Navigation },
   { name: 'Rescue Operations', path: '/rescue-operations', icon: LifeBuoy },
 ]
